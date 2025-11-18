@@ -8,6 +8,22 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
+  "env": {
+    "node": true,
+    "es2020": true
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "parserOptions": {
+        "sourceType": "script"
+      },
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "no-undef": "off"
+      }
+    }
+  ],
   "rules": {
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/explicit-function-return-type": "off",
